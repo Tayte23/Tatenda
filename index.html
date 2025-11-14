@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tatenda • Cloud & AI Portfolio</title>
-  <meta name="description" content="Tatenda — Cloud, AI & Automation portfolio. Quick, beautiful, and GitHub Pages ready." />
+  <title>Taiteq • Cloud & AI Solutions</title>
+  <meta name="description" content="Taiteq — Cloud, AI & Automation solutions. Quick, beautiful, and GitHub Pages ready." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Tailwind via CDN (works on GitHub Pages) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -30,42 +29,36 @@
     body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
     .bg-animated { background-image: var(--bg); animation: float 12s ease-in-out infinite; }
     @keyframes float { 0%,100%{ background-position: 0 0, 0 0, 0 0 } 50%{ background-position: 20px -20px, -30px 10px, 15px 25px } }
-    /* Glass card */
     .glass { backdrop-filter: blur(8px); background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03)); border: 1px solid rgba(255,255,255,.12); }
-    /* Subtle hover lift */
     .lift { transition: transform .25s ease, box-shadow .25s ease; }
     .lift:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,.12); }
-    /* Tilt */
     .tilt:hover { transform: perspective(800px) rotateX(4deg) rotateY(-4deg) scale(1.01); }
-    /* Typing effect */
     .typing:after { content: '▌'; animation: blink 1s infinite; }
     @keyframes blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 bg-animated">
-  <!-- Navigation -->
   <header class="sticky top-0 z-50 backdrop-blur bg-slate-950/60 border-b border-white/10">
     <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
-      <a href="#" class="font-extrabold tracking-tight text-xl">Tatenda<span class="text-brand-400">.</span></a>
+      <a href="#" class="font-extrabold tracking-tight text-xl">Taiteq<span class="text-brand-400">.</span></a>
       <nav class="hidden sm:flex gap-6 text-sm text-slate-300">
         <a href="#projects" class="hover:text-white">Projects</a>
         <a href="#skills" class="hover:text-white">Skills</a>
         <a href="#about" class="hover:text-white">About</a>
         <a href="#contact" class="hover:text-white">Contact</a>
       </nav>
-      <a href="#contact" class="px-3 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-sm">Hire Me</a>
+      <a href="#contact" class="px-3 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-white text-sm">Hire Us</a>
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-5 pt-16 pb-20 grid md:grid-cols-2 items-center gap-10">
       <div>
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-glow">
           Cloud, AI & Automation
-          <span class="block text-brand-300">that actually ships.</span>
+          <span class="block text-brand-300">that actually ship.</span>
         </h1>
-        <p class="mt-5 text-slate-300 text-lg">I design and build clean, reliable systems — from AWS architectures and CI/CD to AI‑powered assistants and RCA tooling.</p>
+        <p class="mt-5 text-slate-300 text-lg">We design and build clean, reliable systems — from AWS architectures and CI/CD to AI‑powered assistants and RCA tooling.</p>
         <p class="mt-2 text-slate-400 typing" id="typed"></p>
         <div class="mt-6 flex gap-3">
           <a href="#projects" class="px-4 py-2 rounded-xl bg-white text-slate-900 font-semibold lift">See Projects</a>
@@ -86,14 +79,12 @@
     </div>
   </section>
 
-  <!-- Projects -->
   <section id="projects" class="max-w-6xl mx-auto px-5 py-16">
     <div class="flex items-end justify-between">
       <h2 class="text-3xl md:text-4xl font-extrabold">Selected Projects</h2>
       <a href="#contact" class="text-brand-300 hover:text-brand-200 text-sm">Need something like this?</a>
     </div>
     <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <!-- Card 1 -->
       <article class="glass rounded-2xl overflow-hidden lift">
         <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" alt="RCA Assistant" class="h-40 w-full object-cover"/>
         <div class="p-5">
@@ -106,7 +97,6 @@
           </ul>
         </div>
       </article>
-      <!-- Card 2 -->
       <article class="glass rounded-2xl overflow-hidden lift">
         <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop" alt="CI/CD" class="h-40 w-full object-cover"/>
         <div class="p-5">
@@ -119,7 +109,6 @@
           </ul>
         </div>
       </article>
-      <!-- Card 3 -->
       <article class="glass rounded-2xl overflow-hidden lift">
         <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop" alt="Explore Zimbabwe" class="h-40 w-full object-cover"/>
         <div class="p-5">
@@ -135,7 +124,6 @@
     </div>
   </section>
 
-  <!-- Skills -->
   <section id="skills" class="max-w-6xl mx-auto px-5 py-16">
     <h2 class="text-3xl md:text-4xl font-extrabold">Capabilities</h2>
     <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -158,26 +146,24 @@
     </div>
   </section>
 
-  <!-- About -->
   <section id="about" class="max-w-6xl mx-auto px-5 py-16">
     <div class="glass rounded-3xl p-8 md:p-10">
-      <h2 class="text-3xl md:text-4xl font-extrabold">About Me</h2>
-      <p class="mt-3 text-slate-300 leading-relaxed">I help teams ship reliable products faster. My sweet spot is where **cloud architecture** meets **AI automation** — building practical tools like RCA assistants, monitoring with auto‑remediation, and clean CI/CD. I focus on outcomes, not hype.</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold">About Us</h2>
+      <p class="mt-3 text-slate-300 leading-relaxed">We help teams ship reliable products faster. Our sweet spot is where **cloud architecture** meets **AI automation** — building practical tools like RCA assistants, monitoring with auto‑remediation, and clean CI/CD. We focus on outcomes, not hype.</p>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="max-w-6xl mx-auto px-5 py-16">
     <div class="grid md:grid-cols-2 gap-8 items-center">
       <div>
         <h2 class="text-3xl md:text-4xl font-extrabold">Let’s build something great</h2>
-        <p class="mt-3 text-slate-300">Email me or book a quick call. I’ll reply within 24 hours.</p>
+        <p class="mt-3 text-slate-300">Email us or book a quick call. We’ll reply within 24 hours.</p>
         <div class="mt-6 flex gap-3">
-          <a class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600" href="mailto:tmanyepa@yahoo.co.uk">tmanyepa@yahoo.com.com</a>
+          <a class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600" href="mailto:info@taiteq.com">info@taiteq.com</a>
           <a class="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10" href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
-      <form onsubmit="event.preventDefault(); alert('Thanks! I\'ll be in touch.');" class="glass rounded-2xl p-6">
+      <form onsubmit="event.preventDefault(); alert('Thanks! We\'ll be in touch.');" class="glass rounded-2xl p-6">
         <div class="grid gap-3">
           <input required placeholder="Your name" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10" />
           <input required type="email" placeholder="Email" class="px-4 py-3 rounded-xl bg-white/5 border border-white/10" />
@@ -189,13 +175,12 @@
   </section>
 
   <footer class="border-t border-white/10 py-8 text-center text-sm text-slate-400">
-    © <span id="y"></span> Tatenda • Built with Tailwind • Deployed on GitHub Pages
+    © <span id="y"></span> Taiteq • Built with Tailwind • Deployed on GitHub Pages
   </footer>
 
   <script>
-    // Simple typewriter lines
     const lines = [
-      'Solutions Architect • AWS • RAG',
+      'Cloud, AI & Automation Experts',
       'DevOps pipelines that just work',
       'AI features: practical > flashy'
     ];
